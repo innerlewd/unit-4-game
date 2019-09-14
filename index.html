@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector Game</title>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 id = "gameName">Crystal Collector</h1>
+    </header>
+    <div class = "instructions">
+        <h3 id = "instructions">INSTRUCTIONS</h3>
+        <p>Try to hit the "Target Score" by clicking on the random crystals. The "Target Score" will be different every time the game resets.</p>
+        <p>Each crystal will give you a different amount of points and will also reset every time you win or lose the game.</p>
+    </div>
+    <crystals>
+        <h3 id = "crystals">CRYSTALS</h3>
+        <button id = "crystal1Button"><img id = "crystal1" src = "assets/images/crystal1.jpg"></button>
+        <button id = "crystal2Button"><img id = "crystal2" src = "assets/images/crystal2.jpg"></button>
+        <button id = "crystal3Button"><img id = "crystal3" src = "assets/images/crystal3.jpg"></button>             
+        <button id = "crystal4Button"><img id = "crystal4" src = "assets/images/crystal4.jpg"></button>
+    </crystals>
+    <div class = "targetScore">
+        <h3 id = "targetScore">TARGET SCORE</h3>
+        <span id = "numberToGuess"></span>
+    </div>
+    <div class = "yourScore">
+        <h3 id = "yourScore">CURRENT SCORE</h3>
+        <span id = "currentScore"></span>
+    </div>
+    <div class = "winOrLose">
+        <h3 id = "winOrLose">WINS/LOSSES</h3>
+        <span id = "wins"><b>Wins: </b></span>
+        <br>
+        <span id = "losses"><b>Losses: </b></span>
+    </div>
+
+    <script src = "assets/javascript/game.js"></script>
+</body>
+</html>
